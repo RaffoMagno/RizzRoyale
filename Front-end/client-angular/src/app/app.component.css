@@ -1,0 +1,245 @@
+@import 'https://fonts.googleapis.com/css?family=Bungee';
+
+/* Reset generale per margini e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0F4D84;
+    background-image:
+        repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), transparent 1px, transparent 10000px),
+        repeating-linear-gradient(60deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 10000px),
+        linear-gradient(60deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1)),
+        linear-gradient(120deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1));
+    background-size: 180px 305px;
+    background-repeat: repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#titre {
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 5px solid black;
+    width: 524px;
+    font-size: 39px;
+    font-family: "bungee", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    text-shadow: -1px 0 1px #582E00, 
+                 1px 0 1px #582E00,
+                 0 -1px 1px #582E00,
+                 0 4px 1px #582E00,
+                 -2px 4px 1px #582E00,
+                 2px 3px 2px #582E00;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.card {
+    width: 500px;
+    margin: 10px auto;
+    background: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Layout bottoni */
+#gruppo-bottoni {
+    width: fit-content;
+    margin: auto;
+}
+
+/* Rende i bottoni Precedente e Successivo in una riga */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Spazio sotto i due bottoni */
+}
+
+/* Bottoni Precedente e Successivo */
+.couche1 {
+    position: relative;
+    border-radius: 11px;
+    width: 300px; /* Larghezza del singolo bottone */
+    height: 100px;
+    background: black;
+    box-shadow: 0px 11px 2px #301C09;
+    cursor: pointer;
+    margin: 0 10px; /* Spaziatura tra i bottoni */
+}
+
+/* Colori e stili delle couché */
+.couche2 {
+    position: absolute;
+    border-radius: 10px;
+    width: 294px;
+    height: 94px;
+    margin-top: 3px;
+    margin-left: 3px;
+    background: #FDA80D;
+    box-shadow: 0px 9px 0px #AF6B06;
+}
+
+.couche23 {
+    position: absolute;
+    border-radius: 10px;
+    width: 292px;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 1px;
+    box-shadow: 0px -4px 5px 0px #FFDC33;
+}
+
+.couche3 {
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-left: 5px;
+    width: 281px;
+    height: 82px;
+    background: rgba(255,187,42,1);
+    box-shadow: 0px 4px 3px 0px #FE8906;
+}
+
+.couche4 {
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 275px;
+    height: 38px;
+    background: #FFD053;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.couche5 {
+    position: absolute;
+    border-radius: 45%;
+    margin-top: 0px;
+    margin-left: 267px;
+    width: 7px;
+    height: 9px;
+    background: #FFF1B6;
+}
+
+.battle {
+    position: relative;
+    font-family: "bungee", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFCC;
+    font-size: 1.7em;
+    text-shadow: -1px 0 1px #582E00, 
+                 1px 0 1px #582E00,
+                 0 -1px 1px #582E00,
+                 0 4px 1px #582E00,
+                 -2px 4px 1px #582E00,
+                 2px 3px 2px #582E00;
+}
+
+/* Effetti di pressione */
+.couche1:active {
+    width: 280px;
+    height: 95px;
+}
+
+.couche1:active .couche2 {
+    width: 274px;
+    height: 89px;
+}
+
+.couche1:active .couche23 {
+    width: 272px;
+    height: 75px;
+}
+
+.couche1:active .couche3 {
+    width: 261px;
+    height: 77px;
+}
+
+.couche1:active .couche4 {
+    width: 255px;
+    height: 32px;
+}
+
+.couche1:active .couche5 {
+    width: 6px;
+    height: 8px;
+    margin-left: 248px;
+}
+
+.couche1:active .battle {
+    margin-top: -3px; 
+    margin-left: 75px;
+}
+
+#red1 {
+    width: calc(100% - 20px);
+}
+
+#red2 {
+    width: calc(100% - 6px);
+    background: #FC3632;
+    box-shadow: 0px 9px 0px #9C1814;
+}
+
+#red23 {
+    width: calc(100% - 12px);
+    box-shadow: 0px -4px 5px 0px #FE5970;
+}
+
+#red3 {
+    width: calc(100% - 20px);
+    background: #FC4262;
+}
+
+#red4 {
+    width: calc(100% - 28px);
+    background: #FF6666;
+}
+
+#red5 {
+    background: #FFC8C8;
+}
+
+#battle_red {
+    text-shadow: -1px 0 1px #990000, 
+                 1px 0 1px #990000,
+                 0 -1px 1px #990000;
+    text-align: center;
+}
+
+/* Bottoni disabilitati */
+.couche1.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* Stile per il bottone Randomizza (rosso) */
+#bottone-rosso {
+    margin-top: 10px;
+}
+

@@ -1,0 +1,76 @@
+<!-- app.component.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RizzRoyale</title>
+</head>
+<body>
+
+  <h1 id="titre">Rizz Royale</h1>
+  <br>
+  
+  <!-- Mostra solo la carta corrente -->
+  <div class="card-container" *ngIf="carte.length > 0">
+    <div class="card">
+      <img [src]="carte[currentIndex]?.immagine" [alt]="carte[currentIndex]?.nome" class="card-image" />
+      <h2>{{ carte[currentIndex]?.nome }}</h2>
+      <p><strong>Tipo:</strong> {{ carte[currentIndex]?.tipo }}</p>
+      <p><strong>Rarità:</strong> {{ carte[currentIndex]?.rarita }}</p>
+      <p><strong>Costo:</strong> {{ carte[currentIndex]?.costo }}</p>
+      <p><strong>Descrizione:</strong> {{ carte[currentIndex]?.descrizione }}</p>
+    </div>
+  </div>
+
+  <!-- Bottoni Precedente, Successivo e Randomizza -->
+  <div id="gruppo-bottoni">
+    <div id="button-container">
+      <div class="row">
+        <!-- Bottone Precedente -->
+        <div class="couche1" (click)="showPrevious()" [class.disabled]="currentIndex === 0">
+          <div class="couche2">
+            <div class="couche23">
+              <div class="couche3">
+                <div class="couche4">
+                  <span class="battle">Precedente</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottone Successivo -->
+        <div class="couche1" (click)="showNext()" [class.disabled]="currentIndex === carte.length - 1">
+          <div class="couche2">
+            <div class="couche23">
+              <div class="couche3">
+                <div class="couche4">
+                  <span class="battle">Successivo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottone Randomizza -->
+      <div id="bottone-rosso" (click)="randomizeCard()">
+        <div class="couche1" id="red1">
+          <div class="couche2" id="red2">
+            <div class="couche23" id="red23">
+              <div class="couche3" id="red3">
+                <div class="couche4" id="red4">
+                  <span class="battle" id="battle_red">Randomizza</span>
+                  <div class="couche5" id="red5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

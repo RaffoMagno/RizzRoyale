@@ -1,0 +1,45 @@
+{
+    "carte": [
+      {
+        "nome": "Scintilla",
+        "tipo": "Truppa",
+        "rarita": "Leggendaria",
+        "costo": 6,
+        "descrizione": "Sparky slowly charges up, then unloads MASSIVE area damage. Overkill isn't in her vocabulary.",
+        "immagine": "https://www.deckshop.pro/img/card_ed/Sparky.png"
+      },
+      {
+        "nome": "Arciere",
+        "tipo": "Truppa",
+        "rarita": "Comune",
+        "costo": 5,
+        "descrizione": "A pair of lightly armored ranged attackers. They'll help you take down ground and air units, but you're on your own with hair coloring advice",
+        "immagine": "https://clashroyaletutorials.altervista.org/wp-content/uploads/2016/03/ArchersCard.png"
+      },
+      {
+        "nome": "Principe",
+        "tipo": "Truppa",
+        "rarita": "Epico",
+        "costo": 5,
+        "descrizione": "Don't let the little pony fool you. Once the Prince gets a running start, you WILL be trampled.",
+        "immagine": "https://api-assets.clashroyale.com/cards/300/3JntJV62aY0G1Qh6LIs-ek-0ayeYFY3VItpG7cb9I60.png"
+      },
+      {
+        "nome": "Torre infernale",
+        "tipo": "Edificio",
+        "rarita": "Raro",
+        "costo": 5,
+        "descrizione": "Things get really hot with this building. ",
+        "immagine": "https://www.supercellfan.it/wiki/wp-content/uploads/2016/04/Torre-Inferno.png"
+      },
+      {
+        "nome": "Scarica",
+        "tipo": "Incantesimo",
+        "rarita": "Comune",
+        "costo": 2,
+        "descrizione": "Scossa? Va beneeee",
+        "immagine": "https://pm1.aminoapps.com/6460/25e41c491a33feaaddb9bd5c936394199acc2a0d_00.jpg"
+      }
+    ]
+  }
+  
