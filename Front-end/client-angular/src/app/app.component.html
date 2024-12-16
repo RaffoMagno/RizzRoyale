@@ -11,7 +11,6 @@
   <h1 id="titre">Rizz Royale</h1>
   <br>
   
-  <!-- Mostra solo la carta corrente -->
   <div class="card-container" *ngIf="carte.length > 0">
     <div class="card">
       <img [src]="carte[currentIndex]?.immagine" [alt]="carte[currentIndex]?.nome" class="card-image" />
@@ -72,5 +71,13 @@
     </div>
   </div>
 
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Link 1</a></li>
+    <li><a class="dropdown-item" href="#">Link 2</a></li>
+    <li><a class="dropdown-item" href="#">Link 3</a></li>
+    <li><a class="dropdown-item-text" href="#">Text Link</a></li>
+    <li><span class="dropdown-item-text">Just Text</span></li>
+  </ul>
+  
 </body>
 </html>

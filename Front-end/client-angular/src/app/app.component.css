@@ -45,22 +45,26 @@ body {
                  2px 3px 2px #582E00;
 }
 
+/* Modifiche per il card-container */
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px auto;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    padding-bottom: 50px;
+}
+
+.card-image {
+    margin: auto;
+    width: auto;
+    height: 250px;
 }
 
 .card {
-    width: 500px;
-    margin: 10px auto;
-    background: #FFF;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    padding: 30px;
+    min-height: 500px;
+    width: 750;
 }
+
 
 /* Layout bottoni */
 #gruppo-bottoni {
@@ -242,4 +246,3 @@ body {
 #bottone-rosso {
     margin-top: 10px;
 }
-
