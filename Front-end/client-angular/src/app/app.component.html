@@ -14,7 +14,8 @@
   <div class="card-container" *ngIf="carte.length > 0">
     <div class="card">
       <img [src]="carte[currentIndex]?.immagine" [alt]="carte[currentIndex]?.nome" class="card-image" />
-      <h2>{{ carte[currentIndex]?.nome }}</h2>
+      <hr>
+      <h2 id="nome-carta">{{ carte[currentIndex]?.nome }}</h2>
       <p><strong>Tipo:</strong> {{ carte[currentIndex]?.tipo }}</p>
       <p><strong>Rarità:</strong> {{ carte[currentIndex]?.rarita }}</p>
       <p><strong>Costo:</strong> {{ carte[currentIndex]?.costo }}</p>

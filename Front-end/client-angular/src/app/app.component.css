@@ -11,6 +11,10 @@ html, body {
     height: 100%;
 }
 
+#nome-carta {
+    text-align: center;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -48,21 +52,22 @@ body {
 /* Modifiche per il card-container */
 .card-container {
     margin: auto;
-    width: fit-content;
+    max-width: 400px;
+    min-width: 400px;
+    min-height: 500px;
+    min-height: 500px;
     height: fit-content;
-    padding-bottom: 50px;
 }
 
 .card-image {
     margin: auto;
     width: auto;
-    height: 250px;
+    height: 225px;
 }
 
 .card {
     padding: 30px;
     min-height: 500px;
-    width: 750;
 }
 
 
